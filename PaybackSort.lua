@@ -1,10 +1,13 @@
-local function HideFirstPartyMember()
-    if CompactPartyFrameMember1 then
-        CompactPartyFrameMember1:Hide()
-    end
+local function HideFirstRaidFrame()
+    C_Timer.After(5, function()
+        if CompactRaidFrame1 then
+            CompactRaidFrame1:Hide()
+        else
+            print("CompactRaidFrame1 not found")
+        end
+    end)
 end
 
--- 注册事件，当玩家进入世界时调用函数
 local frame = CreateFrame("Frame")
-frame:RegisterEvent("PLAYER_ENTERING_WORLD")
-frame:SetScript("OnEvent", HideFirstPartyMember)
+frame:RegisterEvent("PLAYER_LOGIN")
+frame:SetScript("OnEvent", HideFirstRaidFrame)

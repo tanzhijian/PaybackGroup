@@ -1,7 +1,7 @@
 ## Interface: 30403
-## Title: Payback Sort
+## Title: Payback Group
 ## Notes: Hides the first member of the party frame
 ## Author: tanzhijian
 ## Version: 0.1.0
 ## SavedVariables: 
-PaybackSort.lua
+PaybackGroup.lua
