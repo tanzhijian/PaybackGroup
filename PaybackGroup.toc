@@ -1,7 +1,7 @@
 ## Interface: 30403
 ## Title: Payback Group
-## Notes: Hides the first member of the party frame
-## Author: tanzhijian
+## Notes: Hides player of the party frame
+## Author: tanzhijian, payback
 ## Version: 0.1.0
 ## SavedVariables: 
 PaybackGroup.lua
