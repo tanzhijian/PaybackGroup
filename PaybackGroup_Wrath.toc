@@ -1,7 +1,7 @@
-## Interface: 110000
+## Interface: 30403
 ## Title: Payback Group
 ## Notes: Hides player of the party frame
 ## Author: tanzhijian, loner
 ## Version: 0.1.0
 ## SavedVariables: 
-PaybackGroup.lua
+PaybackGroup_Wrath.lua

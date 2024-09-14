@@ -2,7 +2,7 @@ local function HidePlayerRaidFrame()
     C_Timer.After(1, function()
         local numGroupMembers = GetNumGroupMembers()
         for i = 1, numGroupMembers do
-            local raidFrame = _G["CompactPartyFrameMember" .. i]
+            local raidFrame = _G["CompactRaidFrame" .. i]
             if raidFrame and raidFrame.unit and UnitIsUnit(raidFrame.unit, "player") then
                 raidFrame:Hide()
                 break
