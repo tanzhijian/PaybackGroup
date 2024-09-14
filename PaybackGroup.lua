@@ -11,7 +11,10 @@ local function HidePlayerRaidFrame()
     end)
 end
 
-local frame = CreateFrame("Frame")
-frame:RegisterEvent("PLAYER_ENTERING_WORLD")
-frame:RegisterEvent("GROUP_ROSTER_UPDATE")
-frame:SetScript("OnEvent", HidePlayerRaidFrame)
+-- local frame = CreateFrame("Frame")
+-- frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+-- frame:RegisterEvent("GROUP_ROSTER_UPDATE")
+-- frame:SetScript("OnEvent", HidePlayerRaidFrame)
+
+-- 每秒执行一次 HidePlayerRaidFrame 函数
+C_Timer.NewTicker(5, HidePlayerRaidFrame)
